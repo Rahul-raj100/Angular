@@ -1,0 +1,37 @@
+
+.src{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.all{
+    // background-color: rgb(96, 96, 121);
+    // margin-left: 10px;
+    display: flex;
+    
+}
+
+.parent{
+    background-color: rgb(46, 119, 80);
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    align-items: center;
+    
+}
+
+.subParent{
+    display: flex;
+}
+
+.allSub{
+    padding: 10px;
+}
+
+input{
+    border: 1%;
+    width: 175%;
+    height: auto;
+}

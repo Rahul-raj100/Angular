@@ -1,0 +1,41 @@
+// *{
+//     margin: 0;
+//     box-sizing: border-box;
+//     background-color: red;
+// }
+
+// body{
+//     background-color: red;
+// }
+
+.handleEvent{
+    width: 100px; height: 100px;
+}
+
+#event-1{
+    background-color: green; 
+}
+
+#event-2{
+    background-color: blue; 
+}
+
+.inputParent{
+    padding: 10px;
+    background-color: blue; 
+}
+
+.innerChild{
+    background-color: rgb(216, 72, 72);
+    padding: 10px;
+}
+
+.inputParent2{
+    padding: 10px;
+    background-color: rgb(51, 51, 225); 
+}
+
+.innerChild2{
+    background-color: rgb(216, 72, 72);
+    padding: 10px;
+}
