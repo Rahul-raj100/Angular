@@ -1,8 +1,15 @@
 <app-navbar></app-navbar>
 
-<div>
+<input type="text" (input)="getName($event)">
+<br>
+<br>
+<button (click)="displayName()">Get Val</button>
+<br>
+<br>
+User Name: {{showName}}
+<!-- <div>
   <app-login></app-login>
-</div>
+</div> -->
 <!-- 
 <h1> Hello Rahul</h1>
 

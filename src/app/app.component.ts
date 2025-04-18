@@ -46,4 +46,18 @@ export class AppComponent {
   getInput(event:any){
     console.log("event called", event.target.value);
   }
+
+  name=""
+  showName=""
+  getName(event:Event){
+    const val= (event.target as HTMLInputElement).value
+    console.log(val);
+    this.name=val;
+    // this.name = event
+  }
+
+  
+  displayName(){
+    this.showName=this.name
+  }
 }
