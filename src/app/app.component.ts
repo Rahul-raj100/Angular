@@ -80,6 +80,11 @@ export class AppComponent {
     console.log(this.color);
     
   }
+
+  a = [1,2,3,4]
+  showNum(event:Event){
+    
+  }
 }
 
 
