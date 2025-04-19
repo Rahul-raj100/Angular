@@ -73,6 +73,13 @@ export class AppComponent {
   toggle(){
     this.display=!this.display;
   }
+
+  color = 1
+  inputColor(event:Event){
+    this.color = parseInt((event.target as HTMLInputElement).value)
+    console.log(this.color);
+    
+  }
 }
 
 

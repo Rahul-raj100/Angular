@@ -8,8 +8,18 @@
 <br>
 User Name: {{showName}}
 
-@if(display){
+@if(color==1){
   <div style="background-color: aquamarine; height: 200px; width: 200px;">
+    
+  </div>
+}
+@else if(color==2){
+  <div style="background-color: rgb(74, 97, 174); height: 200px; width: 200px;">
+    
+  </div>
+}
+@else{
+  <div style="background-color: rgb(18, 158, 60); height: 200px; width: 200px;">
     
   </div>
 }
@@ -20,6 +30,12 @@ User Name: {{showName}}
 <button (click)="show()">Show Div</button>
 
 <button (click)="toggle()">Toggle Div</button>
+
+<br> 
+<br>
+
+<input type="number" (input)="inputColor($event)" placeholder="input color number" >
+
 <!-- <div>
   <app-login></app-login>
 </div> -->
