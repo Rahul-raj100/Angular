@@ -60,4 +60,19 @@ export class AppComponent {
   displayName(){
     this.showName=this.name
   }
+
+  display = true
+  hide(){
+    this.display=false
+  }
+
+  show(){
+    this.display=true
+  }
+
+  toggle(){
+    this.display=!this.display;
+  }
 }
+
+
