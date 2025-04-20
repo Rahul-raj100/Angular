@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, effect, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -24,19 +24,29 @@ export class AppComponent {
     console.log("other function");
   }
 
-  count = 0
+  count = signal(1)
 
-  handleCounter(para:string){
-    if(para == "plus"){
-      this.count = this.count + 1
-    }
-    else if (para == "minus"){
-      this.count = this.count - 1
-    }
-    else {
-      this.count = 0
-    }
+  updateCount(){
+    this.count.set(this.count()+1)
   }
+
+  constructor(){
+    effect(()=>{
+      console.log(this.count())
+    })
+  }
+
+  // handleCounter(para:string){
+  //   if(para == "plus"){
+  //     this.count = this.count + 1
+  //   }
+  //   else if (para == "minus"){
+  //     this.count = this.count - 1
+  //   }
+  //   else {
+  //     this.count = 0
+  //   }
+  // }
 
   handleEvent(event:any){
     console.log("Function called", event.type);
@@ -46,6 +56,8 @@ export class AppComponent {
   getInput(event:any){
     console.log("event called", event.target.value);
   }
+
+
 
   name=""
   showName=""
